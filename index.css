@@ -4,3 +4,47 @@ html body {
     padding: 0;
     max-width: 1000px;
 }
+.formbody{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px 100px;
+    grid-template-areas: 
+    "g_area_headerstart g_area_headerstart g_area_headerstart g_area_headerstart g_area_headerstart g_area_headerstart"
+    "g_area_menuhead g_area_menuhead g_area_menuhead g_area_menuhead g_area_menuhead g_area_menuhead"
+    "g_area_maintext g_area_maintext g_area_maintext g_area_maintext g_area_sidebar g_area_sidebar"
+    "g_area_bottom g_area_bottom g_area_bottom g_area_bottom g_area_bottom g_area_bottom"
+    ;
+}
+.headerstart{
+    grid-area: g_area_headerstart;
+}
+.headersection{}
+.headerform{}
+.headertext{}
+
+.menuhead{
+    grid-area: g_area_menuhead;
+}
+.navigation{}
+.actualmenu{}
+.menulist{}
+.menuitem{}
+
+.maintext{
+    grid-area: g_area_maintext;
+}
+.textheader{}
+.textbody{}
+
+.sidebar{
+    grid-area: g_area_sidebar;
+}
+.sidebarimg{}
+
+.bottom{
+    grid-area: g_area_bottom;
+}
+.footerending{}
+.footertext{}
